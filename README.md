@@ -1,5 +1,5 @@
 <div align='center'>
-  <h1>vite-plugin-class-mangler</h1>
+  <h1>vite-plugin-css-class-mangler</h1>
   <p>Vite plugin for obfuscating classes in production builds. Compatible with Tailwind or imported styles.</p>
   ![image](https://github.com/kekovina/vite-css-class-mangler/assets/49250681/1ac90de5-9367-4906-a743-f702a7545307)
 
@@ -19,7 +19,7 @@ Add to your vite config:
 
 ```js
 import { defineConfig } from 'vite';
-import ClassMangler from 'vite-plugin-class-mangler';
+import ClassMangler from '@kekovina/vite-plugin-css-class-mangler';
 
 export default defineConfig({
   plugins: [ClassMangler()]
