@@ -1,7 +1,8 @@
 <div align='center'>
   <h1>vite-plugin-class-mangler</h1>
-  <p>Vite plugin for minifying / obfuscating classes in production builds. Compatible with Tailwind, inline, or imported styles.</p>
-  <img width="948" alt="Before/after" src="https://user-images.githubusercontent.com/34040324/182059296-031701cf-da83-4b34-a232-9e9b52c97b56.png">
+  <p>Vite plugin for obfuscating classes in production builds. Compatible with Tailwind or imported styles.</p>
+  ![image](https://github.com/kekovina/vite-css-class-mangler/assets/49250681/1ac90de5-9367-4906-a743-f702a7545307)
+
 </div>
 
 ## Supported frameworks
