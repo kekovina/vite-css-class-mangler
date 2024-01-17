@@ -1,7 +1,7 @@
 {
-  "name": "@kekovina/vite-css-class-mangler",
+  "name": "@kekovina/vite-plugin-css-class-mangler",
   "version": "0.0.1",
-  "description": "Vite plugin for obfuscating CSS class names in project",
+  "description": "Vite plugin for obfuscating classes in production builds. Compatible with Tailwind or imported styles.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
