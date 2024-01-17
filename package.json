@@ -1,0 +1,51 @@
+{
+  "name": "@kekovina/vite-css-class-mangler",
+  "version": "0.0.1",
+  "description": "Vite plugin for obfuscating CSS class names in project",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npx lint && rimraf ./dist && tsup-node ./src/index.ts --format cjs,esm --dts ./src/index.ts",
+    "lint": "prettier --write src/**/*.ts && eslint --fix src/**/*.ts",
+    "setup": "npx husky install && chmod ug+x ./.husky/* && npx husky add .husky/pre-commit 'npx lint-staged'",
+    "publish": "npm publish",
+    "test": "vitest run"
+  },
+  "author": "kekovina",
+  "license": "MIT",
+  "keywords": [
+    "vite-plugin",
+    "tailwind",
+    "vanila",
+    "class minifier",
+    "class mangler"
+  ],
+  "peerDependencies": {
+    "vite": "^3.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "devDependencies": {
+    "@types/randomstring": "^1.1.8",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "@vitest/ui": "^0.20.3",
+    "bumpp": "^7.1.1",
+    "eslint": "^8.20.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "randomstring": "^1.2.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.75.6",
+    "tsup": "^6.1.0",
+    "typescript": "^4.7.4",
+    "vitest": "^0.20.2"
+  }
+}
