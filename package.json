@@ -12,6 +12,10 @@
     "test": "vitest run"
   },
   "author": "kekovina",
+  "bugs": {
+    "url": "https://github.com/kekovina/vite-css-class-mangler/issues",
+    "email": "azarow.ant@gmail.com"
+  },
   "license": "MIT",
   "keywords": [
     "vite-plugin",
